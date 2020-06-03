@@ -1,0 +1,24 @@
+{
+  "name": "readmegenerator",
+  "version": "1.0.0",
+  "description": "Readme Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leon0917/readmeGenerator.git"
+  },
+  "author": "Leon Carnagie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leon0917/readmeGenerator/issues"
+  },
+  "homepage": "https://github.com/Leon0917/readmeGenerator#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "fs": "0.0.1-security",
+    "inquirer": "^7.1.0"
+  }
+}
