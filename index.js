@@ -53,18 +53,35 @@ inquirer.prompt([
     `)
     })
     .then(githubData => {
-        console.log(githubData)
+        console.log("GithubData",githubData.data)
+        console.log("Userdata",userData)
         let readmeData = `
-# github:${userData.github}
-## title:${userData.pTittle}
-(https://img.shields.io/badge/license-${userData.gLicense}-blue.svg)
-follows:${githubData.data.follows}
-## Description:${userData.pDescription}
-## Installation:${userData.pIstallation}
+# Github Username:${userData.github}
+## Project Title:${userData.pTittle}
+
+#  User Profile
+![My-image](./images/proPic.jpg)
+
+Description    | Value
+---------------|----------------------
+Followers  |${githubData.data.followers}
+Following  |${githubData.data.following}
+Blog     |${githubData.data.blog}
+Bio      |${githubData.data.bio}
+Email    |${githubData.data.email}
+
+## Description  :${userData.pDescription}
+## Installation:${userData.cInstallation}
 ## Usage:${userData.nUsage}
-## license:${userData.glicense}
+## license:${userData.gLicense}
+
+(https://img.shields.io/badge/license-${userData.gLicense}-blue.svg)
+
+
 ## Contribution:${userData.lContribution}
 ## Test:${userData.iTest}
-    `
-        fs.writeFileSync("./README.md", readmeData)
+       
+        `
+    
+    fs.writeFileSync("./README.md", readmeData)
     })
