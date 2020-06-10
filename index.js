@@ -69,22 +69,23 @@ Following  |${githubData.data.following}
 Blog     |${githubData.data.blog}
 Bio      |${githubData.data.bio}
 Email    |${githubData.data.email}
-PublicRepo |${githubData.data.public_repos}
+PublicRepos |${githubData.data.public_repos}
 
 ## Description  :${userData.pDescription}
 ## Installation:${userData.cInstallation}
 ## Usage:${userData.nUsage}
+
+## Contribution:${userData.lContribution}
+## Test:${userData.iTest}
+
 ## license:${userData.gLicense}
 
 * ![Github License](https://img.shields.io/badge/license-${userData.gLicense}-blue.svg)
 ----------------------------
-[![Github License](https://img.shields.io/badge/license-${userData.gLicense}-blue.svg)]
 
 
-## Contribution:${userData.lContribution}
-## Test:${userData.iTest}
-       
-        `
+
+`
     
     fs.writeFileSync("./README.md", readmeData)
     })
